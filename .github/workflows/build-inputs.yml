@@ -19,6 +19,7 @@ on:
         type: choice
         options:
         - "default"
+        - "HANDSDOWNGOLD"
         - "AZERTY"
         - "BEAKL15"
         - "Colemak"
