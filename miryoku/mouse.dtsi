@@ -1,0 +1,29 @@
+/ {
+	behaviors {
+		inc_dec_mwh: behavior_sensor_rotate_mouse_wheel {
+			compatible = "zmk,behavior-sensor-rotate-var";
+			label = "ENC_MOUSE_WHEEL";
+			#sensor-binding-cells = <2>;
+         	bindings = <&mwh>, <&mwh>;
+		};
+
+		inc_dec_mmv: behavior_sensor_rotate_mouse_movement {
+			compatible = "zmk,behavior-sensor-rotate-var";
+			label = "ENC_MOUSE_MOVEMENT";
+			#sensor-binding-cells = <2>;
+         	bindings = <&mmv>, <&mmv>;
+		};
+	};
+};
+
+&mmv {
+    delay-ms = <U_MOUSE_MOVE_DELAY>;
+    acceleration-exponent = <U_MOUSE_MOVE_EXPONENT>;
+    time-to-max-speed-ms = <U_MOUSE_MOVE_TIME>;
+};
+
+&mwh {
+    delay-ms = <U_MOUSE_SCROLL_DELAY>;
+    acceleration-exponent = <U_MOUSE_SCROLL_EXPONENT>;
+    time-to-max-speed-ms = <U_MOUSE_SCROLL_TIME>;
+};
