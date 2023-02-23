@@ -19,6 +19,7 @@ on:
         type: choice
         options:
         - "default"
+        - "HandsDownGold"
         - "AZERTY"
         - "BEAKL15"
         - "Colemak"
