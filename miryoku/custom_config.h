@@ -22,20 +22,23 @@ combos {
         */
 
         //   name     	result   	 	chord keys 		layers
-		COMBO(Z,        &kp Z,  		0  1, 			0 1 2)	// Z
-		COMBO(Q, 		&kp Z, 			28 29, 			0 1 2)	// Q
+		COMBO(Z,        &kp Z,  		    0  1, 			0 1 2)	// Z
+		COMBO(Q, 		    &kp Z, 			    28 29, 			0 1 2)	// Q
 		COMB(UNDO,    	K_UNDO,         20 21,			0 1 2)	// undo
 		COMB(REDO,    	K_UNDO,         10 11,			0 1 2)	// redo
-		COMB(CUT,    	K_CUT,    		20 22,			0 1 2)	// cut
-		COMB(COPY,    	K_COPY,    		21 22, 			0 1 2)	// copy
-		COMB(PASTE,    	K_PASTE,    	22 23, 			0 1 2)	// paste
+		COMB(CUT,    	  K_CUT,    		  20 22,			0 1 2)	// cut
+		COMB(COPY,    	K_COPY,    		  21 22, 			0 1 2)	// copy
+		COMB(PASTE,    	K_PASTE,    	  22 23, 			0 1 2)	// paste
 		COMB(PSTM,    	LSHFT(K_PASTE),	21 23, 			0 1 2)	// paste match
-		COMB(SALL,    	LCTL(&kp S),	20 23, 			0 1 2)	// select all
-		COMB(KILL,    	LALT(F4),  		20  4, 			0 1 2)	// force quit
+		COMB(SALL,    	LCTL(&kp S),	  20 23, 			0 1 2)	// select all
+		COMB(KILL,    	LALT(F4),  		  20  4, 			0 1 2)	// force quit
 		COMB(SCLP,    	LS(LGUI(&kp S)),0  29, 			0 1 2)	// screenshot
-		COMB(CAPS,    	CAPS,      		23 26, 			0 1 2)	// CAPS LOCK
-		COMB(FIND,    	K_FIND,    		21 24, 			0 1 2)	// find 
-		
+		COMB(CAPS,    	CAPS,      		  23 26, 			0 1 2)	// CAPS LOCK
+		COMB(FIND,    	K_FIND,    		  21 24, 			0 1 2)	// find 
+		COMB(DELETE,    DEL,            13 31,      0 1 2)  // delete 
+    COMB(DELETE,    RET,            15 33,      0 1 2)  // enter 
+
+    
         /* Convenience */
         //COMBO(esc, &kp ESC, 3 4, DEF_L ALT_L)
         //COMBO(del, &kp DEL, 13 14, DEF_L ALT_L)
@@ -48,6 +51,8 @@ combos {
 
 #define MIRYOKU_LAYER_BASE \
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
-U_MT(LGUI, R),     U_MT(LALT, S),     U_MT(LCTRL, N),    U_MT(LSHFT, D),    &kp B,             &kp AMPS,          U_MT(LSHFT, A),    U_MT(LCTRL, E),   U_MT(LALT, I),      U_MT(LGUI, H),     \
-U_LT(U_BUTTON, X), U_MT(RALT, F),     &kp L,             &kp C,             &kp W,             &kp MINUS,         &kp U,             &kp O,            U_MT(RALT, Y),      U_LT(U_BUTTON, K),  \
-U_NP,              U_NP,              U_LT(U_NUM, DEL),  U_LT(U_SYM, BSPC), U_LT(U_NAV, T),    U_LT(U_SYM, TAB),  U_LT(U_NAV, SPACE),U_LT(U_FUN, DEL), U_NP,               U_NP
+U_MT(LGUI, R),     U_MT(LALT, S),     U_MT(LCTRL, N),    U_MT(LSHFT, D),    &kp B,             &kp AMPS,          U_MT(LSHFT, A),    U_MT(LCTRL, E),    U_MT(LALT, I),     U_MT(LGUI, H),      \
+U_LT(U_BUTTON, X), U_MT(RALT, F),     &kp L,             &kp C,             &kp W,             &kp MINUS,         &kp U,             &kp O,             U_MT(RALT, Y),     U_LT(U_BUTTON, K),  \
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, T),    U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
