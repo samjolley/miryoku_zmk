@@ -35,8 +35,8 @@ combos {
 		COMB(SCLP,    	LS(LGUI(&kp S)),0  29, 			0 1 2)	// screenshot
 		COMB(CAPS,    	CAPS,      		  23 26, 			0 1 2)	// CAPS LOCK
 		COMB(FIND,    	K_FIND,    		  21 24, 			0 1 2)	// find 
-		COMB(DELETE,    DEL,            13 31,      0 1 2)  // delete 
-    COMB(DELETE,    RET,            15 33,      0 1 2)  // enter 
+		COMB(DELETE,    TAB,            13 31,      0 1 2)  // tab 
+    COMB(DELETE,    TAB,            16 31,      0 1 2)  // tab 
 
     
         /* Convenience */
@@ -53,6 +53,10 @@ combos {
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
 U_MT(LGUI, R),     U_MT(LALT, S),     U_MT(LCTRL, N),    U_MT(LSHFT, D),    &kp B,             &kp AMPS,          U_MT(LSHFT, A),    U_MT(LCTRL, E),    U_MT(LALT, I),     U_MT(LGUI, H),      \
 U_LT(U_BUTTON, X), U_MT(RALT, F),     &kp L,             &kp C,             &kp W,             &kp MINUS,         &kp U,             &kp O,             U_MT(RALT, Y),     U_LT(U_BUTTON, K),  \
-U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, T),    U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE), U_LT(U_MOUSE, T), U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
-U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+#define MIRYOKU_LAYER_TAP \
+&kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
+&kp R,             &kp S,             &kp N,             &kp D,             &kp B,             &kp AMPS,          &kp A,             &kp E,             &kp I,             &kp H,              \
+&kp X,             &kp F,             &kp L,             &kp C,             &kp W,             &kp MINUS,         &kp U,             &kp O,             &kp Y,             &kp K,              \
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE), U_LT(U_MOUSE, T), U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
