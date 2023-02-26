@@ -8,8 +8,9 @@
     key-positions = <KEYPOS>;                 \
     layers = <LAYERS>;                        \
   };
-        combos {
-                compatible = "zmk,combos";
+  
+  combos {
+          compatible = "zmk,combos";
 
     /*                KEY POSITIONS
 
