@@ -19,27 +19,26 @@
     layers = <LAYERS>;                        \
   };
 
- {
-
+/ {
         combos {
                 compatible = "zmk,combos";
 
-                // name         result           chord keys     layers
-                COMBO(Z,        &kp Z,           0   1,         0 1 2)  // Z
-                COMBO(Q,        &kp Z,           28 29,         0 1 2)  // Q
-                COMB(UNDO,      K_UNDO,          20 21,         0 1 2)  // undo
-                COMB(REDO,      K_UNDO,          10 11,         0 1 2)  // redo
-                COMB(CUT,       K_CUT,           20 22,         0 1 2)  // cut
-                COMB(COPY,      K_COPY,          21 22,         0 1 2)  // copy
-                COMB(PASTE,     K_PASTE,         22 23,         0 1 2)  // paste
-                COMB(PSTM,      LSHFT(K_PASTE),  21 23,         0 1 2)  // paste match
-                COMB(SALL,      LCTL(&kp S),     20 23,         0 1 2)  // select all
-                COMB(KILL,      LALT(F4),        20  4,         0 1 2)  // force quit
-                COMB(SCLP,      LS(LGUI(&kp S)), 0  29,         0 1 2)  // screenshot
-                COMB(CAPS,      CAPS,            23 26,         0 1 2)  // CAPS LOCK
-                COMB(FIND,      K_FIND,          21 24,         0 1 2)  // find 
-                COMB(DELETE,    TAB,             13 31,         0 1 2)  // tab 
-                COMB(DELETE,    TAB,             16 31,         0 1 2)  // tab 
+                // name               result           chord keys     layers
+                COMBO(combo_Z,        &kp Z,           0   1,         0 1 2)  // Z
+                COMBO(combo_Q,        &kp Z,           28 29,         0 1 2)  // Q
+                COMB(combo_UNDO,      K_UNDO,          20 21,         0 1 2)  // undo
+                COMB(combo_REDO,      K_UNDO,          10 11,         0 1 2)  // redo
+                COMB(combo_CUT,       K_CUT,           20 22,         0 1 2)  // cut
+                COMB(combo_COPY,      K_COPY,          21 22,         0 1 2)  // copy
+                COMB(combo_PASTE,     K_PASTE,         22 23,         0 1 2)  // paste
+                COMB(combo_PSTM,      LSHFT(K_PASTE),  21 23,         0 1 2)  // paste match
+                COMB(combo_SALL,      LCTL(&kp S),     20 23,         0 1 2)  // select all
+                COMB(combo_KILL,      LALT(F4),        20  4,         0 1 2)  // force quit
+                COMB(combo_SCLP,      LS(LGUI(&kp S)), 0  29,         0 1 2)  // screenshot
+                COMB(combo_CAPS,      CAPS,            23 26,         0 1 2)  // CAPS LOCK
+                COMB(combo_FIND,      K_FIND,          21 24,         0 1 2)  // find 
+                COMB(combo_DELETE,    TAB,             13 31,         0 1 2)  // tab 
+                COMB(combo_DELETE,    TAB,             16 31,         0 1 2)  // tab 
 
         };   
   };
