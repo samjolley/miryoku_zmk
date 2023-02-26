@@ -19,7 +19,7 @@
     layers = <LAYERS>;                        \
   };
 
- {
+/ {
         combos {
                 compatible = "zmk,combos";
 
