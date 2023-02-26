@@ -59,4 +59,4 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE), U_L
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
 &kp R,             &kp S,             &kp N,             &kp D,             &kp B,             &kp AMPS,          &kp A,             &kp E,             &kp I,             &kp H,              \
 &kp X,             &kp F,             &kp L,             &kp C,             &kp W,             &kp MINUS,         &kp U,             &kp O,             &kp Y,             &kp K,              \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE), U_LT(U_MOUSE, T), U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+U_NP,              U_NP,              ESC,               SPACE,             T,                 RET,               BSPC,              DEL,               U_NP,              U_NP
