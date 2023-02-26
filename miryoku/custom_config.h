@@ -3,13 +3,13 @@
 
 // Combos
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-  combo_##NAME {                              \
+    combo_##NAME {                            \
     bindings = <BINDINGS>;                    \
     key-positions = <KEYPOS>;                 \
     layers = <LAYERS>;                        \
   };
 
-  
+{  
         combos {
                 compatible = "zmk,combos";
 
