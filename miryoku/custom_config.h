@@ -31,9 +31,9 @@
                 COMBO(combo_CUT,       K_CUT,           20 22,         0 1 2)  // cut
                 COMBO(combo_COPY,      K_COPY,          21 22,         0 1 2)  // copy
                 COMBO(combo_PASTE,     K_PASTE,         22 23,         0 1 2)  // paste
-                COMBO(combo_PSTM,      LSHFT(PASTE),    21 23,         0 1 2)  // paste match
-                COMBO(combo_SALL,      LCTL(S),         20 23,         0 1 2)  // select all
-                COMBO(combo_KILL,      LALT(F4),        20  4,         0 1 2)  // force quit
+                COMBO(combo_PSTM,      LS(PASTE),       21 23,         0 1 2)  // paste match
+                COMBO(combo_SALL,      LC(S),           20 23,         0 1 2)  // select all
+                COMBO(combo_KILL,      LA(F4),          20  4,         0 1 2)  // force quit
                 COMBO(combo_SCLP,      LS(LGUI(S)),     0  29,         0 1 2)  // screenshot
                 COMBO(combo_CAPS,      CAPS,            23 26,         0 1 2)  // CAPS LOCK
                 COMBO(combo_FIND,      K_FIND,          21 24,         0 1 2)  // find 
