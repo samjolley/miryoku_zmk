@@ -25,7 +25,7 @@
 
                 // name                result           chord keys     layers
                 COMBO(combo_Z,         &kp Z,           0   1,         0 1 2)  // Z
-                COMBO(combo_Q,         &kp Z,           28 29,         0 1 2)  // Q
+                COMBO(combo_Q,         &kp Q,           28 29,         0 1 2)  // Q
                 COMBO(combo_UNDO,      K_UNDO,          20 21,         0 1 2)  // undo
                 COMBO(combo_REDO,      K_UNDO,          10 11,         0 1 2)  // redo
                 COMBO(combo_CUT,       K_CUT,           20 22,         0 1 2)  // cut
