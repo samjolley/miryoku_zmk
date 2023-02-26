@@ -41,7 +41,7 @@
                 COMBO(combo_DELETE,    TAB,             16 31,         0 1 2)  // tab 
 
         };
-
+  };
 
 
 
