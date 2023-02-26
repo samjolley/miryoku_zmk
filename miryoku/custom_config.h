@@ -38,14 +38,7 @@ COMB(FIND,    	K_FIND,    		   21 24, 			  0 1 2)	// find
 COMB(DELETE,    TAB,             13 31,         0 1 2)  // tab 
 COMB(DELETE,    TAB,             16 31,         0 1 2)  // tab 
 
-
-/* Convenience */
-//COMBO(esc, &kp ESC, 3 4, DEF_L ALT_L)
-//COMBO(del, &kp DEL, 13 14, DEF_L ALT_L)
-//COMBO(select_all, &kp LC(A), 21 22, NAV_L)
-
-//COMBO(alt_alphas, &tog ALT_L, 5 15 25, DEF_L ALT_L)
- };   
+  };   
 
 #define MIRYOKU_LAYER_BASE \
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
