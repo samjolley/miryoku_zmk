@@ -19,6 +19,7 @@
     layers = <LAYERS>;                        \
   };
 
+/ {
         combos {
                 compatible = "zmk,combos";
 
@@ -40,6 +41,7 @@
                 COMBO(combo_DELETE,    TAB,             16 31,         0 1 2)  // tab 
 
                 };
+    };
 
 #define MIRYOKU_LAYER_BASE \
 &kp J,             &kp G,             &kp M,              &kp P,              &kp V,           &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
