@@ -10,8 +10,6 @@
 
 #include "miryoku.h"
 
-#include "combos.dtsi"
-
 / {
   keymap {
     compatible = "zmk,keymap";
