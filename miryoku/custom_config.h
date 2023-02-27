@@ -26,8 +26,8 @@
                 // name                result           chord keys     layers
                 COMBO(combo_Z,         &kp Z,           0   1,         0 1 2)  // Z
                 COMBO(combo_Q,         &kp Q,           28 29,         0 1 2)  // Q
-                COMBO(combo_TAB_L,     TAB,             13 31,         0 1 2)  // tab 
-                COMBO(combo_TAB_R,     TAB,             16 31,         0 1 2)  // tab 
+
+
 
                 };
     };
