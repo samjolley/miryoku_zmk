@@ -12,22 +12,21 @@
 */
 
 // Combos
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+#define COMBO(NAME, BINDINGS, KEYPOS) \
     combo_##NAME {                            \
     bindings = <BINDINGS>;                    \
     key-positions = <KEYPOS>;                 \
-    layers = <LAYERS>;                        \
   };
 
+/ {
+        combos {
+                compatible = "zmk,combos";
 
-combos {
-        compatible = "zmk,combos";
-
-        // name          result           chord keys     layers
-        COMBO(Z,         &kp Z,           0   1,         0 1 2)
-        COMBO(Q,         &kp Q,           28 29,         0 1 2)
-        };
-
+                // name          result           chord keys
+                COMBO(Z,         &kp Z,           0   1)    
+                COMBO(Q,         &kp Q,           28 29)    
+                };
+    };
 
 #define MIRYOKU_LAYER_BASE \
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
