@@ -10,7 +10,7 @@
 
 #include "miryoku.h"
 
-#include <combos.dtsi>
+#include "combos.dtsi"
 
 / {
   keymap {
