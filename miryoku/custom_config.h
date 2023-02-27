@@ -12,20 +12,33 @@
 */
 
 // Combos
-#define COMBO(NAME, BINDINGS, KEYPOS) \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
     combo_##NAME {                            \
     bindings = <BINDINGS>;                    \
     key-positions = <KEYPOS>;                 \
-    layers = <0 1 2>;                         \
+    layers = <LAYERS>;                        \
   };
 
 {
         combos {
                 compatible = "zmk,combos";
 
-                // name          result           chord keys
-                COMBO(Z,         &kp Z,           0   1)    
-                COMBO(Q,         &kp Q,           28 29)    
+                // name                result           chord keys     layers
+                COMBO(Z,               &kp Z,           0   1,         0 1 2)  // Z
+                COMBO(Q,               &kp Q,           28 29,         0 1 2)  // Q
+                COMBO(combo_UNDO,      K_UNDO,          20 21,         0 1 2)  // undo
+                COMBO(combo_REDO,      K_REDO,          10 11,         0 1 2)  // redo
+                COMBO(combo_CUT,       K_CUT,           20 22,         0 1 2)  // cut
+                COMBO(combo_COPY,      K_COPY,          21 22,         0 1 2)  // copy
+                COMBO(combo_PASTE,     K_PASTE,         22 23,         0 1 2)  // paste
+                COMBO(combo_PSTM,      LS(K_PASTE),     21 23,         0 1 2)  // paste match
+                COMBO(combo_SALL,      LC(S),           20 23,         0 1 2)  // select all
+                COMBO(combo_KILL,      LA(F4),          20  4,         0 1 2)  // force quit
+                COMBO(combo_SCLP,      LS(LG(S)),       0  29,         0 1 2)  // screenshot
+                COMBO(combo_CAPS,      CAPS,            23 26,         0 1 2)  // CAPS LOCK
+                COMBO(combo_FIND,      K_FIND,          21 24,         0 1 2)  // find 
+                COMBO(combo_TAB_L,     TAB,             13 31,         0 1 2)  // tab 
+                COMBO(combo_TAB_R,     TAB,             16 31,         0 1 2)  // tab 
                 };
 };
 
