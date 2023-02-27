@@ -19,7 +19,7 @@
     layers = <LAYERS>;                        \
   };
 
-{
+/ {
         combos {
                 compatible = "zmk,combos";
 
@@ -40,6 +40,7 @@
                 COMBO(combo_TAB_L,     TAB,             13 31,         0 1 2)  // tab 
                 COMBO(combo_TAB_R,     TAB,             16 31,         0 1 2)  // tab 
                 };
+        };
 };
 
 #define MIRYOKU_LAYER_BASE \
