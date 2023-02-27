@@ -16,6 +16,7 @@
     combo_##NAME {                            \
     bindings = <BINDINGS>;                    \
     key-positions = <KEYPOS>;                 \
+    layers = <0 1 2>;                         \
   };
 
 / {
