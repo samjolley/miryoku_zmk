@@ -1,9 +1,16 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-  combos {
-    #include "combos.dtsi"
-  };
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_Z {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp Z>;
+        };
+    };
+};
 
 #define MIRYOKU_LAYER_BASE \
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
