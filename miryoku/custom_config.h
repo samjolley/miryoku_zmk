@@ -23,9 +23,9 @@
         combos {
                 compatible = "zmk,combos";
 
-                // name          result           chord keys     layers
-                COMBO(Z,         &kp Z,           0   1,         0 1 2)
-                COMBO(Q,         &kp Q,           28 29,         0 1 2)
+                // name          result       chord keys     layers
+                COMBO(Z,         Z,           0   1,         0 1 2)
+                COMBO(Q,         Q,           28 29,         0 1 2)
                 };
     };
 
