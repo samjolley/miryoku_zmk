@@ -19,15 +19,15 @@
     layers = <LAYERS>;                        \
   };
 
-/ {
-        combos {
-                compatible = "zmk,combos";
 
-                // name          result       chord keys     layers
-                COMBO(Z,         Z,           0   1,         0 1 2)
-                COMBO(Q,         Q,           28 29,         0 1 2)
-                };
-    };
+combos {
+        compatible = "zmk,combos";
+
+        // name          result           chord keys     layers
+        COMBO(Z,         &kp Z,           0   1,         0 1 2)
+        COMBO(Q,         &kp Q,           28 29,         0 1 2)
+        };
+
 
 #define MIRYOKU_LAYER_BASE \
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
