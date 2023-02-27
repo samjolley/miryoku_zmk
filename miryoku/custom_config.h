@@ -11,21 +11,6 @@
           ╰────────────╯ ╰────────────╯            
 */
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_Z {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp Z>;
-        };
-        combo_Q {
-            timeout-ms = <50>;
-            key-positions = <28 29>;
-            bindings = <&kp Q>;
-        };
-    };
-};
 
 #define MIRYOKU_LAYER_BASE \
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
