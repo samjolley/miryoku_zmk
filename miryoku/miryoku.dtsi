@@ -13,31 +13,19 @@
 / {
   keymap {
     compatible = "zmk,keymap";
-#define MIRYOKU_X(LAYER, STRING, EXTRA) \
+#define MIRYOKU_X(LAYER, STRING) \
     U_##LAYER## { \
       label = STRING; \
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_##LAYER, MIRYOKU_LAYER_##LAYER) >; \
-      EXTRA \
     };
 MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
   };
 };
 
-/ {
-  behaviors {
-    hm: homerow_mods {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS";
-      #binding-cells = <2>;
-      tapping_term_ms = <U_TAPPING_TERM>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&kp>;
-    };
-  };
-};
-
 #include "miryoku_shift_functions.dtsi"
+
+#include "miryoku_double_tap_guard.dtsi"
 
 #if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
   #include "miryoku_kludge_mousekeyspr.dtsi"
@@ -55,4 +43,10 @@ MIRYOKU_LAYER_LIST
 
 #if defined (MIRYOKU_KLUDGE_BOTTOMROWCOMBOS)
   #include "miryoku_kludge_bottomrowcombos.dtsi"
+#endif
+
+#if defined (MIRYOKU_KLUDGE_TAPDELAY)
+  #include "miryoku_kludge_tapdelay.dtsi"
+#else
+  #include "miryoku_behaviors.dtsi"
 #endif
