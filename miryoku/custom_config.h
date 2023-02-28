@@ -9,8 +9,6 @@ U_LT(U_BUTTON, X), U_MT(RALT, F),     &kp L,             &kp C,             &kp 
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, T),  U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 // Layout mapping and miryoku combos
-#if !defined (MIRYOKU_LAYOUTMAPPING_CORNE)
-
 #define XXX &none
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
@@ -30,6 +28,3 @@ XXX    K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp Q \
 
 #define MIRYOKU_KLUDGE_THUMBCOMBOS_LEFT 37 38
 #define MIRYOKU_KLUDGE_THUMBCOMBOS_RIGHT 39 40
-
-
-#endif
