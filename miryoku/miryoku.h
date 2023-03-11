@@ -14,8 +14,6 @@
 #define U_NU &none // available but not used
 
 #define U_TAPPING_TERM 200
-CONFIG_BT_CTLR_TX_PWR_PLUS_8=y
-CONFIG_ZMK_DISPLAY=y k
 
 #include "miryoku_clipboard.h"
 
