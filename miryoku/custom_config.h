@@ -1,8 +1,6 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-CONFIG_BT_CTLR_TX_PWR_PLUS_8=y
-
 // Add Hands Down Gold (Neu-TX) as alpha layer
 #define MIRYOKU_LAYER_BASE \
 &kp J,             &kp G,             &kp M,             &kp P,             &kp V,             &kp SEMI,          &kp COMMA,         &kp DOT,           &kp SLASH,         &kp BSLH,           \
