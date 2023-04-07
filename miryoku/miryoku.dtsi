@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #include "miryoku.h"
-#include "combos.dtsi"
 
 / {
   keymap {
@@ -51,3 +50,5 @@ MIRYOKU_LAYER_LIST
 #else
   #include "miryoku_behaviors.dtsi"
 #endif
+
+#include "combos.dtsi"
