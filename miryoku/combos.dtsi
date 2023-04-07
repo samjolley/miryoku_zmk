@@ -20,8 +20,8 @@ compatible = "zmk,combos";
 
 // name                result           chord keys     layers
 COMBO(Z,               &kp Z,           1   2,         0 1 2)  // Z
-COMBO(combo_ESC,       &kp ESC,         0   1,         0 1 2)  // escape
 COMBO(Q,               &kp Q,           28 29,         0 1 2)  // Q
+COMBO(combo_ESC,       &kp ESC,         0   1,         0 1 2)  // escape
 COMBO(combo_UNDO,      K_UNDO,          20 21,         0 1 2)  // undo
 COMBO(combo_REDO,      K_REDO,          10 11,         0 1 2)  // redo
 COMBO(combo_CUT,       K_CUT,           20 22,         0 1 2)  // cut
