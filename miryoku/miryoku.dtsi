@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #include "miryoku.h"
+#include "combos.dtsi"
 
 / {
   keymap {
