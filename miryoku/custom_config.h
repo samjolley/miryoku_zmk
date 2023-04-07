@@ -8,3 +8,6 @@ U_MT(LCTRL, R),    U_MT(LALT, S),     U_MT(LGUI, N),     U_MT(LSHFT, D),    &kp 
 U_LT(U_BUTTON, X), U_MT(RALT, F),     &kp L,             &kp C,             &kp W,               &kp MINUS,         &kp U,              &kp O,             U_MT(RALT, Y),     U_LT(U_BUTTON, K),  \
 U_NP,              U_NP,              U_LT(U_MEDIA, DEL),U_LT(U_NAV, T),    U_LT(U_MOUSE, TAB),  U_LT(U_SYM, RET),  U_LT(U_NUM, SPACE), U_LT(U_FUN, BSPC), U_NP,              U_NP
 
+#define MIRYOKU_KLUDGE_TOPROWCOMBOS
+#define MIRYOKU_KLUDGE_BOTTOMROWCOMBOS
+#define MIRYOKU_KLUDGE_THUMBCOMBOS
