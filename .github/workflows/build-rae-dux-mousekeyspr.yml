@@ -12,4 +12,4 @@ jobs:
       shield: '["rae_dux_left","rae_dux_right"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-      branches: '["zmkfirmware/zmk/main urob/zmk/mouse-3.2"]'
+      branches: '["urob/zmk/mouse-3.2"]'
