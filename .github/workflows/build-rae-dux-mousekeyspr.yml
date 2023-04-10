@@ -15,5 +15,4 @@ jobs:
       branches: '[
         "zmkfirmware/zmk/main krikun98/zmk/mouse-pr",
         "zmkfirmware/zmk/main ftc/zmk/mouse-ftc",
-        "ftc/zmk/mouse-ftc"
       ]'
