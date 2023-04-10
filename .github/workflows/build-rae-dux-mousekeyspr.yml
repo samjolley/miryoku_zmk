@@ -9,7 +9,11 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["rae_dux_left"]'
+      shield: '["rae_dux_left","rae_dux_right"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-      branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+      branches: '[
+        "zmkfirmware/zmk/main krikun98/zmk/mouse-pr",
+        "zmkfirmware/zmk/main ftc/zmk/mouse-ftc",
+        "ftc/zmk/mouse-ftc"
+      ]'
