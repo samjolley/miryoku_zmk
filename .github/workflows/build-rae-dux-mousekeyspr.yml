@@ -13,5 +13,5 @@ jobs:
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
       branches: '[
-        "urob/zmk/tree/mouse-3.2",
+        "zmkfirmware/zmk/main urob/zmk/tree/mouse-3.2",
       ]'
