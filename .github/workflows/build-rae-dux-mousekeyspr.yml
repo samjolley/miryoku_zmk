@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example mousekeyspr'
+name: 'Build rae-dux mousekeyspr'
 on: workflow_dispatch
 jobs:
   build:
