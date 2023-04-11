@@ -12,3 +12,6 @@ U_NP,              U_NP,              U_LT(U_MEDIA, DEL),U_LT(U_NAV, T),    U_LT
 #define MIRYOKU_KLUDGE_BOTTOMROWCOMBOS
 #define MIRYOKU_KLUDGE_THUMBCOMBOS
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
+
+# increase bluetooth signal power
+CONFIG_BT_CTLR_TX_PWR_PLUS_8=y
