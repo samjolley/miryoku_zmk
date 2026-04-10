@@ -14,79 +14,79 @@
 
     combo_Z {
       bindings = <&kp Z>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <1 2>;
       layers = <0 1 2>;
     };
     combo_Q {
       bindings = <&kp Q>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <28 29>;
       layers = <0 1 2>;
     };
     combo_ESC {
       bindings = <&kp ESC>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <0 1>;
       layers = <0 1 2>;
     };
     combo_UNDO {
       bindings = <&kp K_UNDO>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <20 21>;
       layers = <0 1 2>;
     };
     combo_REDO {
       bindings = <&kp K_REDO>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <10 11>;
       layers = <0 1 2>;
     };
     combo_CUT {
       bindings = <&kp K_CUT>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <20 22>;
       layers = <0 1 2>;
     };
     combo_COPY {
       bindings = <&kp K_COPY>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <21 22>;
       layers = <0 1 2>;
     };
     combo_PASTE {
       bindings = <&kp K_PASTE>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <22 23>;
       layers = <0 1 2>;
     };
     combo_PSTM {
       bindings = <&kp LS(K_PASTE)>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <21 23>;
       layers = <0 1 2>;
     };
     combo_SALL {
       bindings = <&kp LC(A)>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <20 23>;
       layers = <0 1 2>;
     };
     combo_KILL {
       bindings = <&kp LA(F4)>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <20 4>;
       layers = <0 1 2>;
     };
     combo_SCRNSHT {
       bindings = <&kp LS(LG(S))>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <0 29>;
       layers = <0 1 2>;
     };
     combo_FIND {
       bindings = <&kp K_FIND>;
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <21 24>;
       layers = <0 1 2>;
     };
