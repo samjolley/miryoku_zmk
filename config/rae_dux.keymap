@@ -4,4 +4,75 @@
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/36/minidox.h"
 #include "../miryoku/miryoku.dtsi"
-#include "../miryoku/combos.dtsi"
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+    combo_ESC {
+      timeout-ms = <50>;
+      key-positions = <0 1>;
+      bindings = <&kp ESC>;
+    };
+    combo_Z {
+      timeout-ms = <50>;
+      key-positions = <1 2>;
+      bindings = <&kp Z>;
+    };
+    combo_Q {
+      timeout-ms = <50>;
+      key-positions = <28 29>;
+      bindings = <&kp Q>;
+    };
+    combo_UNDO {
+      timeout-ms = <50>;
+      key-positions = <20 21>;
+      bindings = <&kp K_UNDO>;
+    };
+    combo_REDO {
+      timeout-ms = <50>;
+      key-positions = <10 11>;
+      bindings = <&kp K_REDO>;
+    };
+    combo_CUT {
+      timeout-ms = <50>;
+      key-positions = <20 22>;
+      bindings = <&kp K_CUT>;
+    };
+    combo_COPY {
+      timeout-ms = <50>;
+      key-positions = <21 22>;
+      bindings = <&kp K_COPY>;
+    };
+    combo_PASTE {
+      timeout-ms = <50>;
+      key-positions = <22 23>;
+      bindings = <&kp K_PASTE>;
+    };
+    combo_PASTE_MATCH {
+      timeout-ms = <50>;
+      key-positions = <21 23>;
+      bindings = <&kp LS(K_PASTE)>;
+    };
+    combo_SELECT_ALL {
+      timeout-ms = <50>;
+      key-positions = <20 23>;
+      bindings = <&kp LC(A)>;
+    };
+    combo_KILL {
+      timeout-ms = <50>;
+      key-positions = <20 4>;
+      bindings = <&kp LA(F4)>;
+    };
+    combo_SCREENSHOT {
+      timeout-ms = <50>;
+      key-positions = <0 29>;
+      bindings = <&kp LS(LG(S))>;
+    };
+    combo_FIND {
+      timeout-ms = <50>;
+      key-positions = <21 24>;
+      bindings = <&kp K_FIND>;
+    };
+  };
+};
