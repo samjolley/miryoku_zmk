@@ -15,5 +15,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, DEL),U_LT(U_NAV, T),    U_LT
 &kp X,             &kp F,             &kp L,             &kp C,             &kp W,               &kp MINUS,         &kp U,              &kp O,             &kp Y,             &kp K,              \
 U_NP,              U_NP,              &kp DEL,           &kp T,             &kp TAB,             &kp RET,           &kp SPACE,          &kp BSPC,          U_NP,              U_NP
 
+#define MIRYOKU_KLUDGE_TOPROWCOMBOS
+#define MIRYOKU_KLUDGE_BOTTOMROWCOMBOS
 #define MIRYOKU_KLUDGE_THUMBCOMBOS
 #define MIRYOKU_KLUDGE_SOFT_OFF
