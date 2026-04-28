@@ -216,7 +216,7 @@ jobs:
               then
                 if [ -n "$branches" ]
                 then
-                  branches="$braches $outboard_branches"
+                  branches="$branches $outboard_branches"
                 else
                   branches="$outboard_branches"
                 fi
