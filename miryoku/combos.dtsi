@@ -8,15 +8,16 @@
   ╰────────────────────╯ ╰────────────────────╯            
 */
 
-compatible = "zmk,combos";
+/ {
+  compatible = "zmk,combos";
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    timeout-ms = <30>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
-  };
+  #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+    combo_##NAME { \
+      bindings = <BINDINGS>; \
+      timeout-ms = <30>; \
+      key-positions = <KEYPOS>; \
+      layers = <LAYERS>; \
+    };
 
 // name                result               chord keys     layers
 COMBO(Z,               &kp Z,               1  2,          0 1 2)  // Z
