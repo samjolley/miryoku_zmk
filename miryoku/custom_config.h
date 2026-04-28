@@ -19,3 +19,5 @@ U_NP,              U_NP,              &kp DEL,           &kp T,             &kp 
 #define MIRYOKU_KLUDGE_BOTTOMROWCOMBOS
 #define MIRYOKU_KLUDGE_THUMBCOMBOS
 #define MIRYOKU_KLUDGE_SOFT_OFF
+#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+#define MIRYOKU_KLUDGE_SOFT_OFF
