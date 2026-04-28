@@ -33,3 +33,4 @@ COMBO(combo_SALL,      &kp LC(A),           20 23,         0 1 2)  // select all
 COMBO(combo_KILL,      &kp LA(F4),          20  4,         0 1 2)  // force quit
 COMBO(combo_SCRNSHT,   &kp LS(LG(S)),       0  29,         0 1 2)  // screenshot
 COMBO(combo_FIND,      &kp K_FIND,          21 24,         0 1 2)  // find 
+};
