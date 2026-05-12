@@ -1,0 +1,13 @@
+# Outboard configuration for the diode-dux shield.
+# Place at: .github/workflows/outboards/shields/diode_dux
+# in samjolley/miryoku_zmk (Rebase-2026 branch).
+#
+# Miryoku's build workflow will clone the named repo at the named ref,
+# copy `outboard_from` to `outboard_to` inside the build tree, then
+# build it with Miryoku's generated keymap (your Hands-Down Gold
+# layout + all the Miryoku combos and HRMs).
+
+outboard_repository=samjolley/diode-dux-zmk-config
+outboard_ref=main
+outboard_from=config/boards/shields/diode_dux
+outboard_to=boards/shields/diode_dux
