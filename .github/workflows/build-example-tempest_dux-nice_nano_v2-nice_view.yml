@@ -1,7 +1,10 @@
 # Copyright 2021 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 name: 'Build Example tempest_dux nice_nano_v2 nice_view'
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches: [tempest_dux]
 jobs:
   build:
     uses: ./.github/workflows/main.yml
