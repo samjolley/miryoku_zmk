@@ -1,0 +1,8 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+outboard_repository=samjolley/rae-dux-zmk-config
+outboard_ref=tempest_dux
+outboard_from=config/boards/shields/tempest_dux
+outboard_to=boards/shields/tempest_dux
+outboard_modules=badjeff/zmk-pmw3610-driver/main
