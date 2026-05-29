@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-outboard_repository=andrewjrae/zmk-config
+outboard_repository=samjolley/rae-dux-zmk-config
 outboard_ref=development
 outboard_from=config/boards/shields/rae_dux
 outboard_to=boards/shields/rae_dux
